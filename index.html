@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			img{
+				width: 400px;
+				height: auto;
+				display: block;
+			    margin: 0 auto;
+				/*滤镜*
+				grayscale():设置灰度，1是百分之百，0百分之0*/
+			    -webkit-filter: grayscale(0);
+				transition: all 3s;<!--慢慢转换-->
+			}
+			img:hover{
+				-webkit-filter: none;
+			}
+			.img1{
+				    -webkit-filter: grayscale(1);
+			}
+			.img2{
+				/*brightness：亮度
+				1是正常亮度*/
+				  -webkit-filter: brightness(2);
+			}
+			.img3{
+				/*褐色属性 speia 1百分之百褐色*/
+				-webkit-filter: sepia(1);
+			}
+			.img4{
+				/*滤镜属性，模糊度 blur 单位像素*/
+				-webkit-filter: blur(0.3125rem);
+			}
+			.img5{
+				/*滤镜属性 对比度 1是百分百*/
+				-webkit-filter: contrast(2);
+			}
+			.img6{
+				/*滤镜属性 饱和度 1是百分百*/
+				-webkit-filter: saturate(2);
+			}
+			.img7{
+				/*滤镜属性 胶片底色*/
+				-webkit-filter: invert(1);
+			}
+			.img8{
+				/*滤镜属性 色相旋转*/
+				-webkit-filter: hue-rotate(0deg);
+			}
+			.img9{
+				/*滤镜属性  组合素描效果*/
+				-webkit-filter: blur(10px) brightness(10) grayscale(1);
+				transition: all 15s;<!--慢慢转换-->
+			}
+			.img9:hover {
+				/*滤镜属性 */
+				-webkit-filter:blur(0px) grayscale(1)；
+			}
+		</style>
+	</head>
+	<body>
+		<img class="img1"src="img/虞书欣.jpg" >
+		<img class="img2"src="img/虞书欣.jpg" >
+		<img class="img3"src="img/虞书欣.jpg" >
+		<img class="img4"src="img/虞书欣.jpg" >
+		<img class="img5"src="img/虞书欣.jpg" >
+	    <img class="img6"src="img/虞书欣.jpg" >
+		<img class="img7"src="img/虞书欣.jpg" >
+		<img class="img8"src="img/虞书欣.jpg" >
+		<img class="img9"src="img/虞书欣.jpg" >
+	</body>
+</html>
